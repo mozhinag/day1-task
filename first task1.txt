@@ -1,0 +1,150 @@
+1.Write a blog on Difference between HTTP1.1 vs HTTP2?
+
+HTTP:
+	HTTP stands for Hypertext Transfer Protocol. It is the foundation of the World Wide Web and is used by browsers to load web pages.
+       A typical example is when your browser sends an HTTP request to a web server after entering an URL. The HTTP command then provides an HTTP response to the web server with the webpage’s contents.
+ 
+
+There are several stages of development of HTTP but we will focus mainly on HTTP/1.1 and HTTP/2.
+
+What is Http 1.1?
+
+	Http 1.1 version was introduced in 1997. The is the major version of HTTP network protocol used by the World Wide Web. Http is a top level application protocol that exchanges information between a client computer and a local and remote web server.  This version introduces many performance enhancements like caching mechanism, transfer encoding, keepalive connections, byte range requests, and request pipelining. This protocol worked for 15 years almost.  
+
+What is Http 2?
+
+	Http 2 is the new version of HTTP 1.1. The protocol introduced back in February 2015 by the Internet Engineering Task Force (IETF) Http working group. The newish protocol transport data to drastically speed up the web and can help boost your Search Engine Optimization. It uses new technologies to provide full multiplexing connections. Http 2 is much needed upgrade to the Http protocol; it manages the communication between browsers and web servers. Moreover, Http 2 provides a dramatic speed boost for the website.
+
+Some key diff between HTTP1 vs HTTP2
+			
+			HTTP1.1
+										HTTP2
+
+•	Slower and less efficient				•	Much faster and more efficient
+•	Developers have less control over prioritization
+								•	Developers have hands-on, detailed control over prioritization
+
+•	No weighted prioritization feature			•	Weighted prioritization feature available
+•	Data is send one after the other			.	Data is send all at once (multiplexing
+•	No Hpack						•	Yes Hpack
+•	No Server push						•	Yes Server push
+•	Slow loading time					•	Fast loading time
+	
+	Major performance comparison between Http 1.1 and Http 2
+		
+#Web traffic	
+
+	Http 1.1 – It provides faster delivery of web pages and reduces web traffic if you compare it to Http 1.0. However, there is an increased risk of network congestion.
+	
+	Http 2 – The Http 2 version utilizes multiplexing and server pushes to effectively reduce the page load time by a greater margin along with being sensitive to network delays.
+
+#Performance optimization
+	
+	Http 1.1 – Some of the optimizations used is Http 1.1 version are sprinting, inlining, domain shrading, and concatenating.
+	
+	Http 2 – This protocol version removes the need for unnecessary optimization hacks.
+
+#Status code
+	Http 1.1 – This protocol introduces a warning header field to carry additional information about the status of a message. It can define 24 status codes, error reporting is quicker and more efficient.
+	
+	Http 2 – It brings the fundamental semantics of HTTP like headers, and status code remains the same.
+
+#Authentication mechanism
+
+	Http 1.1 – Protocol Http 1.1 is much secured than Http 1.0 because it uses digest authentication and NTLM authentication.
+
+	Http 2.2 – The security concern in Http 2 version is also good and almost same as Http 1.1. Rather Http 2 is better equipped to deal with security threats because of the new features it brings. For example, new TLS feature like connection error of type inadequate security.
+
+#Security
+
+	Http 1.1 – In this version, SSL or secure sockets layer is not required but recommended. Digest authentication is an improvement over Http 1.0 which is now being used in Http 1.1. Moreover, Https uses SSL/TLS for secure encrypted communication.
+
+	Http 2 – In Http 2 protocol, security is not at all recommended. It is because the security is encrypted since all almost all clients demand traffic to be encrypted. It also has minimum standards and minimum key size for encryption.
+
+
+
+
+
+
+
+
+
+2.Write a blog about objects and its internal representation in Javascript
+
+	In JavaScript, an object is a standalone entity, with properties and type. Compare it with a cup, for example. A cup is an object, with properties. A cup has a color, a design, weight, a material it is made of, etc. The same way, JavaScript objects can have properties, which define their characteristics.
+
+Creating Objects in JavaScript:
+
+	1.By object literal
+
+	2.By creating instance of Object directly (using new keyword)
+
+By object literal:
+
+	The syntax of creating object using object literal is given below:
+
+ 	object={property1:value1,property2:value2.....propertyN:valueN}
+							
+	Property and value is separated by colon(:).
+
+
+
+Example:
+	
+	var person={
+		fname:"xxx";
+		lname:"yyy";
+		age:25
+		};
+	
+ 
+By creating instance of Object directly (using new keyword):
+
+The syntax of creating object directly is given below:
+
+	var objectname=new.object();
+ 
+Here, new keyword is used to create object.
+
+Example:
+
+	var emp=new.object();
+	emp id=101;
+	emp name="xxx";
+	emp salary=50000;
+ 
+Accessing JavaScript Objects:
+
+The syntax for accessing the property of an object is:
+
+	objectName.property
+or
+ 	objectName[“property”]
+
+Accessing ‘fname’ from example 1 using dot operator,
+	
+ 	person.fname
+
+Accessing ‘name’ form example 2 using [],
+
+	emp["name"]
+
+ The syntax for adding a property to an object is :
+
+	ObjectName.ObjectProperty = propertyValue;
+
+The syntax for deleting a property from an object is:
+
+	 delete ObjectName.ObjectProperty;
+
+Object methods
+	An object method is an object property containing a function definition.
+i.e.,
+	Let’s assume to start the car there will be a mechanical functionality.
+	
+	Function() { return ignition.on }
+
+
+and so similar is to stop/brake/headlights on & off, etc.
+So, conclusion and simple definition for Java Script Object methods is “Methods are actions that can be performed on objects.”
+
